@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Calculatory</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+
+
+<body>
+<div class="container" id="calculator" >
+<div>
+  <input id="display" value='' readonly></input>
+  <input id="display2" value='' readonly></input>
+</div>
+<div>
+  <input type="button" class="button operation" value='M' onClick= "signal()"></input>
+  <input type="button" class= "button operation" value='AC'></input>
+  <input type="button" class= "button operation" value='C' onClick="clear_display('')"></input>
+
+
+
+  <input type="button" class= "button operation" value='*'  onClick="add_to_display('*')"></input><br>
+
+  <input type="button" class= "button" value='7' onClick="add_to_display('7')"></input>
+  <input type="button" class= "button" value='8' onClick="add_to_display('8')" ></input>
+  <input type="button" class= "button" value='9' onClick="add_to_display('9')"></input>
+  <input type="button" class= "button operation" value='/'  onClick="add_to_display('/')"></input><br>
+
+  <input type="button" class= "button" value='4' onClick="add_to_display('4')"></input>
+  <input type="button" class= "button" value='5' onClick="add_to_display('5')"></input>
+  <input type="button" class= "button" value='6' onClick="add_to_display('6')"></input>
+  <input type="button" class= "button operation" value='+' onClick="add_to_display('+')" ></input><br>
+  <input type="button" class= "button" value='1'  onClick="add_to_display('1')"></input>
+  <input type="button" class= "button" value='2'  onClick="add_to_display('2')"></input>
+  <input type="button" class= "button" value='3'  onClick="add_to_display('3')"</input>
+  <input type="button" class= "button operation" value='-'  onClick="add_to_display('-')"></input><br>
+  <input type="button" class= "button" value='.'  onClick="add_to_display('.')"></input>
+  <input type="button" class= "button" value='0'  onClick="add_to_display('0')"></input>
+  <input id="buttonEqual" value='='  onClick="eval_display()" ></input><br>
+
+</div>
+</div>
+<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
