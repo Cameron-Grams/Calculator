@@ -1,5 +1,6 @@
 body {
   background-color: #ced8ba;
+
   }
 
 #calculator {
@@ -12,6 +13,7 @@ body {
   margin: auto;
   text-align: center;
   box-shadow: 10px 10px 5px #888888;
+  cursor: crosshair; 
 }
 
 #display {
@@ -41,6 +43,7 @@ body {
   border-radius: 10px;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
+  cursor: crosshair; 
 }
 
 .operation {
@@ -65,4 +68,5 @@ body {
   border-radius: 10px;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
+  cursor: crosshair; 
  }
