@@ -14,14 +14,19 @@
 <div class="container" id="calculator" >
 <div>
   <input id="display" value='' readonly></input>
-  <input id="display2" value='' readonly></input>
+  <input id="display2" value='' readonly></input><br>
+  <span id="memory_span">Memory:   <input id="display3" value='' readonly></input></span>
+
+
+
+
+
 </div>
+
 <div>
-  <input type="button" class="button operation" value='M' onClick= "signal()"></input>
-  <input type="button" class= "button operation" value='AC'></input>
-  <input type="button" class= "button operation" value='C' onClick="clear_display('')"></input>
-
-
+  <input type="button" class="button operation" value='M' onClick= "add_to_memory()"></input>
+  <input type="button" class= "button operation" value='AC'onClick="clear_all('')"></input>
+  <input type="button" class= "button operation" value='C' onClick="clear_working('')"></input>
 
   <input type="button" class= "button operation" value='*'  onClick="add_to_display('*')"></input><br>
 
